@@ -1,15 +1,18 @@
 # Prerequisites
 *.d
+*.d*
 
 # Compiled Object files
 *.slo
 *.lo
 *.o
 *.obj
+*.o*
 
 # Precompiled Headers
 *.gch
 *.pch
+Makefile
 
 # Compiled Dynamic libraries
 *.so
@@ -34,3 +37,6 @@
 #workspace
 *.code-workspace
 *.json
+*.project
+*.mk
+*.txt
