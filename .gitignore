@@ -40,3 +40,6 @@ Makefile
 *.project
 *.mk
 *.txt
+*.codelite/*
+*.workspace*
+*tags*
