@@ -63,6 +63,43 @@ int main()
 			<< movie_rating.at(0).at(1) << endl
 			<< movie_rating.at(0).at(2) << endl
 			<< movie_rating.at(0).at(3) << endl;
+	
+	vector <unsigned short> Dimension1, Dimension2 ;
+	
+	unsigned short myVal {0};
+	
+	cout << "Enter 4 Numbers with space: ";
+	cin >> myVal;
+	Dimension1.push_back(myVal);
+	cin >> myVal;
+	Dimension1.push_back(myVal);	
+	cin >> myVal;
+	cout << "Dimension1 Created" << endl ;
+	Dimension2.push_back(myVal);
+	cin >> myVal;
+	Dimension2.push_back(myVal);
+	cout << "Dimension2 Created" << endl
+			<< "Inserting Dimension1 and Dimension2 into a new 2D array" << endl;
+			
+	vector <vector <unsigned short>> my2Dvector ;
+	my2Dvector.push_back(Dimension1);
+	my2Dvector.push_back(Dimension2);
+	cout << "Dimension1 From 2D Vector"		<< endl
+			<< my2Dvector.at(0).at(0)  				<< endl
+			<< my2Dvector.at(0).at(1)  				<< endl
+			<< "Dimension2 From 2D Vector"		<< endl
+			<< my2Dvector.at(1).at(0)  				<< endl
+			<< my2Dvector.at(1).at(1)  				<< endl
+			<< "Complete!" << endl
+			<< "Provide a value to update Dimendion1" << endl
+			<< "Value before update: "<< Dimension1.at(0) << endl ; 
+	cin >> myVal;
+	Dimension1.at(0) = myVal;
+	cout <<"Updated value of Dimension1 through vector" << endl
+			<< my2Dvector.at(0).at(0) << endl ;
+			
+					
+			
 			
 		return 0;
 	}
