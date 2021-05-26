@@ -84,22 +84,18 @@ int main()
 	vector <vector <unsigned short>> my2Dvector ;
 	my2Dvector.push_back(Dimension1);
 	my2Dvector.push_back(Dimension2);
-	cout << "Dimension1 From 2D Vector"		<< endl
-			<< my2Dvector.at(0).at(0)  				<< endl
-			<< my2Dvector.at(0).at(1)  				<< endl
-			<< "Dimension2 From 2D Vector"		<< endl
-			<< my2Dvector.at(1).at(0)  				<< endl
-			<< my2Dvector.at(1).at(1)  				<< endl
-			<< "Complete!" << endl
-			<< "Provide a value to update Dimendion1" << endl
-			<< "Value before update: "<< Dimension1.at(0) << endl ; 
+	cout 	<< "Dimension1 From 2D Vector"	<< endl
+	     	<< my2Dvector.at(0).at(0)  	<< endl
+		<< my2Dvector.at(0).at(1)  	<< endl
+		<< "Dimension2 From 2D Vector"	<< endl
+		<< my2Dvector.at(1).at(0)  	<< endl
+		<< my2Dvector.at(1).at(1)  	<< endl
+		<< "Complete!" 			<< endl
+		<< "Provide a value to update Dimendion1" << endl
+		<< "Value before update: "<< Dimension1.at(0) << endl ; 
 	cin >> myVal;
 	Dimension1.at(0) = myVal;
 	cout <<"Updated value of Dimension1 through vector" << endl
 			<< my2Dvector.at(0).at(0) << endl ;
-			
-					
-			
-			
 		return 0;
 	}
