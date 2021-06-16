@@ -9,6 +9,23 @@ using std::cout;
 using std::cin;
 using std::endl;
 
+
+// Infinite Loop
+// for(;;)
+//while(True)
+
+void printTables(int tillWhen)
+    {
+        for( int i = 1 ; i <= tillWhen ; i++)
+        {
+            cout << "Table: " << i << endl;  
+            for (int j = 1; j <= 10; j++)
+            {
+                cout << i << " i*j " << j << " = " << (i*j) << endl;
+            } cout << "\n-----------------\n" << endl;
+        }    
+    }
+
 int main()
     {   
         vector<uint16_t> nums{};
@@ -26,7 +43,7 @@ int main()
           // Input validation to get a number between 10 - 100
           // will run until the expression is True and negated as false by not
           // So it can be summarized as while(not(False))
-
+        printTables(tillWhen) ;
         for (uint16_t i = 1; i <= tillWhen; i++)
                 nums.push_back(i*3);
         
