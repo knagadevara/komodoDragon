@@ -11,8 +11,8 @@ const double currencyDollar[5] {100,50,25,10,5};
 // const double HalfOfTenth {5};
 
 
-
 int main()
     {
+        
         return 0;
     }

@@ -5,7 +5,7 @@ using std::endl;
 
 int main()
 {
-	const char alphabetVowels[6] { 'a' , 'e'  , 'i' , 'o' , 'u' , '\0' } ;  // array is locket at size 5 and cannot go beyond it will throw 'array out of bound' exception. And terminate the character array with '\0'
+	const char alphabetVowels[6] { 'a' , 'e'  , 'i' , 'o' , 'u' , '\0' } ;  // array is locked at size 5 and cannot go beyond it will throw 'array out of bound' exception. And terminate the character array with '\0'
 	cout << "The First Vowel is: " << alphabetVowels[0] << endl
 			<< "The Last Vowel is: " << alphabetVowels[4] << endl ;
 
