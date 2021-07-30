@@ -5,8 +5,10 @@ int main(void)
         Player* player1 = new Player;
         player1->set_player_name( "Sai", "Karthik");
         player1->get_player_name();
-        Player player2;
-        player2.set_player_name( "Karthik", "Nagadevara");
-        player2.get_player_name();        
+        Player* player2 = new Player("Aditya" , "Nag" , 75.0 , 5.10);
+        player2->talk("Hello");
+        player2->get_player_weight();
+        delete player1;
+        delete player2;
         return 0;
     }
