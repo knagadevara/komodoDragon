@@ -42,18 +42,10 @@ void Player::set_player_height(double height) { this->height = height; }
 double Player::get_player_height() { return this->height; }
 
  Player::Player()
-        : weight{0.0} , height{0.0} , first_name{""} , last_name{""}
-    {   
-        std::cout << "Default Costructor Called" << std::endl;
-    }
-
+        : Player {"NA" , "NA" , 0.0 , 0.0} {}
+        
  Player::Player(std::string first_name, std::string last_name)
-        : first_name{first_name} , last_name{last_name} , weight{0.0} , height{0.0}
-    {
-        std::cout << "Created! " 
-                  << "Name: "   << this->get_player_name()
-                  << std::endl;
-    }
+        : Player {first_name , last_name , 0.0 , 0.0} {}
 
  Player::Player(std::string first_name, std::string last_name , double weight , double height)
         : first_name{first_name} , last_name{last_name} , weight{weight} , height{height}
