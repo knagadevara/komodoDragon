@@ -35,7 +35,6 @@ bool Player::is_dead(double health)
             return false;        
     }
 
-
 void Player::set_player_weight(double weight)
     {
         this->weight = weight;
@@ -59,11 +58,13 @@ double Player::get_player_height()
     }
 
  Player::Player()
-    {
+        : weight{0.0} , height{0.0} , first_name{""} , last_name{""}
+    {   
         std::cout << "Default Costructor Called" << std::endl;
     }
 
- Player::Player(std::string first_name, std::string last_name) 
+ Player::Player(std::string first_name, std::string last_name)
+        : weight{0.0} , height{0.0}  
     {
         this->set_player_name(first_name, last_name);
         std::cout << "Created! " 
@@ -84,4 +85,3 @@ double Player::get_player_height()
                   << "Name: "   << this->get_player_name()
                   << std::endl;
     }
-        
