@@ -1,10 +1,10 @@
+#include <iostream>
+#include <string>
 #include "../include/Player.h"
 
 int main(void)
     {
-        Player* player1 = new Player;
-        player1->set_player_name( "Sai", "Karthik");
-        player1->get_player_name();
+        Player* player1 = new Player("Sai", "Karthik");
         Player* player2 = new Player("Aditya" , "Nag" , 75.0 , 5.10);
         player2->talk("Hello");
         player2->get_player_weight();

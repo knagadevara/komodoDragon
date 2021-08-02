@@ -41,22 +41,25 @@ double Player::get_player_weight() { return this->weight; }
 void Player::set_player_height(double height) { this->height = height; }
 double Player::get_player_height() { return this->height; }
 
- Player::Player()
-        : Player {"NA" , "NA" , 0.0 , 0.0} {}
-        
- Player::Player(std::string first_name, std::string last_name)
-        : Player {first_name , last_name , 0.0 , 0.0} {}
-
  Player::Player(std::string first_name, std::string last_name , double weight , double height)
         : first_name{first_name} , last_name{last_name} , weight{weight} , height{height}
     {
-        std::cout << "Created! " 
+        std::cout 
+                  << std::endl
+                  << "--------------------------------------"
+                  << std::endl    
+                  << "Created! "
+                  << std::endl
                   << "Name: "   << this->get_player_name()
+                  << std::endl
                   << "Weight: " << this->get_player_weight()
+                  << std::endl
                   << "Height: " << this->get_player_height()
+                  << std::endl
+                  << "--------------------------------------"
                   << std::endl;
     }
-
+    
  Player::~Player()
     {
         std::cout << "Destructor Called on: " 

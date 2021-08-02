@@ -17,20 +17,18 @@ class Player
         // Attributes
         // Data
         private:
-            std::string first_name {"Player-First-Name"};
-            std::string last_name {"Player-Last-Name"};
-            double height {};
-            double weight {};
-            double health {};
-            int skill {};
+            std::string first_name;
+            std::string last_name;
+            double weight;
+            double height;
+            double health;
+            int skill;
         
         // Methods
         // Possible operations on the data
         public:
         // Constructors
-            Player();
-            Player(std::string first_name, std::string last_name);
-            Player(std::string first_name, std::string last_name , double weight , double height);
+            Player(std::string first_name = "NA" , std::string last_name = "NA" , double weight = 0.0 , double height = 0.0);
 
         // Destructor
             ~Player();
